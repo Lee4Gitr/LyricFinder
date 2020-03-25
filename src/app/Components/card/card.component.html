@@ -1,0 +1,17 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title class="ellipsify"> {{song.title}}</mat-card-title>
+    <mat-card-subtitle>Artist: {{song.artist}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image class="album-art" src="{{song.picture}}" alt="{{song.album}}">
+  <mat-card-content class="ellipsify" >
+    Album: <a href="{{song.albumLink}}">{{song.album}}</a>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="accent"
+    (click)="getLyrics()">
+    Get Lyrics
+  </button>
+  <a mat-flat-button color="accent" href="{{song.preview}}" target="_blank">Preview</a>
+  </mat-card-actions>
+</mat-card>

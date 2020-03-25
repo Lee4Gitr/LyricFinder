@@ -1,0 +1,14 @@
+<div class="container">
+  
+  <div class="row">
+    <div class="col-sm">
+      <h3>{{songInfo.title}}</h3>
+      <h5>{{songInfo.artist}}</h5>
+      <h5>{{songInfo.album}}</h5>
+      <p class="lyrics" [innerHTML]="songInfo.lyrics"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm"><a [routerLink]="['/']">Back</a></div>
+  </div>
+</div>

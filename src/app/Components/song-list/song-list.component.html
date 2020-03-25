@@ -1,0 +1,5 @@
+<mat-grid-list [cols]="4" [rowHeight]="600">
+  <mat-grid-tile *ngFor="let song of SongList">
+    <app-card class='col-sm' [song]="song"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
