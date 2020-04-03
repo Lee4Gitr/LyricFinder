@@ -18,6 +18,6 @@ export class ShareSongDataService {
   constructor() { }
 
   changeMessage(songInfo: songInfo) {
-    this.songData.next(songInfo);
+    this.songData.next(songInfo); 
   }
 }
